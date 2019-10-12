@@ -3,6 +3,7 @@ import React from 'react';
 class Customer extends React.Component {
     render(){
         return(
+            // jsx 문법은 두개 이상의 컴포넌트를 사용할 때 무조건 div 태그로 감싸야된다.
             <div>
                 <CustomerProfile id={this.props.id} image ={this.props.image} name={this.props.name}/>
                 <CustomerInfo birthday={this.props.birthday} gender={this.props.gender} job={this.props.job}/>
